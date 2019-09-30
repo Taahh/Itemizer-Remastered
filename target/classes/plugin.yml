@@ -1,0 +1,10 @@
+name: Itemizer-Remastered
+author: taahanis
+description: Customize your item
+main: me.taahanis.itemizer.Itemizer
+api-version: 1.13
+version: 1.0
+commands:
+  itemizer:
+    usage: /<command>
+    description: Customize your items

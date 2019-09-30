@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Itemizer Remastered:jar">
+    <output-path>$USER_HOME$/OneDrive/Desktop/Vanilla MC Server/plugins</output-path>
+    <root id="archive" name="Itemizer Remastered.jar">
+      <element id="module-output" name="Itemizer Remastered" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
