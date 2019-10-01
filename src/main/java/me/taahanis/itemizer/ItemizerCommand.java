@@ -61,7 +61,7 @@ public class ItemizerCommand implements CommandExecutor {
 
         if (args[0].equalsIgnoreCase("name"))
         {
-            String name = StringUtils.join(ArrayUtils.subarray(args, 1, args.length), " ");
+            String name = StringUtils.join(args, " ", 1, args.length);
 
             if (args.length < 2)// /argslength0 argslength1 argslength2
             {
@@ -79,7 +79,7 @@ public class ItemizerCommand implements CommandExecutor {
 
         if (args[0].equalsIgnoreCase("title"))
         {
-            String title = StringUtils.join(ArrayUtils.subarray(args, 1, args.length), " ");
+            String title = StringUtils.join(args, " ", 1, args.length);
 
             if (args.length < 2)// /argslength0 argslength1 argslength2
             {
@@ -119,7 +119,7 @@ public class ItemizerCommand implements CommandExecutor {
                 player.sendMessage("§6[§bItemizer§6] §aYou did not specify an author.");
                 return true;
             }
-            String authorName = StringUtils.join(ArrayUtils.subarray(args, 1, args.length), " ");
+            String authorName = StringUtils.join(args, " ", 1, args.length);
 
             BookMeta meta = (BookMeta) itemMeta;
             assert meta != null;
@@ -152,7 +152,7 @@ public class ItemizerCommand implements CommandExecutor {
             }
             if (args[1].equalsIgnoreCase("set"))
             {
-                String lore = StringUtils.join(ArrayUtils.subarray(args, 2, args.length), " ");
+                String lore = StringUtils.join(args, " ", 2, args.length);
 
                 if (args.length < 3)// /itemizer lore set lore
                 {
@@ -171,7 +171,7 @@ public class ItemizerCommand implements CommandExecutor {
 
             if (args[1].equalsIgnoreCase("add"))
             {
-                String lore = StringUtils.join(ArrayUtils.subarray(args, 2, args.length), " ");
+                String lore = StringUtils.join(args, " ", 2, args.length);
 
                 assert itemMeta != null;
 
